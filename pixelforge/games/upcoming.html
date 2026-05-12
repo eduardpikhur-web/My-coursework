@@ -1,0 +1,173 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Анонси</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 30px 40px;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 100%);
+            color: #e2e8f0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 30px;
+            color: #ffffff;
+            text-align: center;
+            text-shadow: 0 0 15px #7b2fff;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #a78bfa;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .announce-card {
+            background: rgba(123, 47, 255, 0.07);
+            border: 1px solid rgba(123, 47, 255, 0.25);
+            border-radius: 14px;
+            padding: 25px;
+            margin-bottom: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .announce-card:hover {
+            background: rgba(123, 47, 255, 0.14);
+            border-color: rgba(123, 47, 255, 0.5);
+        }
+
+        .announce-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 12px;
+        }
+
+        .announce-icon { font-size: 40px; }
+
+        .announce-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .announce-date {
+            font-size: 12px;
+            color: #fbbf24;
+            margin-top: 3px;
+        }
+
+        .announce-status {
+            margin-left: auto;
+            font-size: 12px;
+            padding: 5px 14px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        .status-soon { background: rgba(251,191,36,0.15); color: #fbbf24; border: 1px solid rgba(251,191,36,0.4); }
+        .status-dev  { background: rgba(96,165,250,0.15); color: #60a5fa; border: 1px solid rgba(96,165,250,0.4); }
+        .status-early { background: rgba(52,211,153,0.15); color: #34d399; border: 1px solid rgba(52,211,153,0.4); }
+
+        .announce-desc {
+            font-size: 14px;
+            color: #94a3b8;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .announce-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            font-size: 12px;
+            color: #a78bfa;
+            background: rgba(123,47,255,0.12);
+            padding: 3px 10px;
+            border-radius: 20px;
+        }
+
+        .progress-bar {
+            background: rgba(255,255,255,0.08);
+            border-radius: 10px;
+            height: 6px;
+            margin-top: 12px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            border-radius: 10px;
+            background: linear-gradient(90deg, #7b2fff, #a855f7);
+        }
+
+        .progress-label {
+            font-size: 12px;
+            color: #64748b;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Анонси</h1>
+<div class="subtitle">Ігри, які ми зараз розробляємо</div>
+
+<div class="announce-card">
+    <div class="announce-header">
+        <div>
+            <div class="announce-title">Abyssal Protocol</div>
+            <div class="announce-date">Очікується: Q3 2026</div>
+        </div>
+        <span class="announce-status status-soon">Скоро</span>
+    </div>
+    <div class="announce-desc">Підводний survival-horror з процедурно генерованими рівнями. Досліджуйте занурені підводні комплекси, уникаючи невідомих істот з глибин. Атмосфера клаустрофобії та напруги гарантована.</div>
+    <div class="announce-tags">
+        <span class="tag">Survival Horror</span><span class="tag">Procedural</span><span class="tag">PC</span><span class="tag">Unity 6</span>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" style="width:78%"></div></div>
+    <div class="progress-label">Готовність: 78% — фінальне тестування</div>
+</div>
+
+<div class="announce-card">
+    <div class="announce-header">
+        <div>
+            <div class="announce-title">CityCode: Reboot</div>
+            <div class="announce-date">Очікується: Q1 2027</div>
+        </div>
+        <span class="announce-status status-dev">В розробці</span>
+    </div>
+    <div class="announce-desc">Кіберпанк-симулятор міста з елементами стратегії та хакінгу. Будуйте місто майбутнього, контролюйте інфраструктуру та протистойте корпораціям, які хочуть захопити владу.</div>
+    <div class="announce-tags">
+        <span class="tag">City Builder</span><span class="tag">Strategy</span><span class="tag">Cyberpunk</span><span class="tag">PC</span>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" style="width:42%"></div></div>
+    <div class="progress-label">Готовність: 42% — активна розробка</div>
+</div>
+
+<div class="announce-card">
+    <div class="announce-header">
+        <div>
+            <div class="announce-title">Evo Island</div>
+            <div class="announce-date">Early Access: вже доступно</div>
+        </div>
+        <span class="announce-status status-early">Early Access</span>
+    </div>
+    <div class="announce-desc">Мобільна гра про еволюцію екосистеми острова. Керуйте видами, адаптуйте їх до змін клімату та побудуйте збалансований природній баланс. Ідеально для казуальних гравців.</div>
+    <div class="announce-tags">
+        <span class="tag">Casual</span><span class="tag">Simulation</span><span class="tag">Mobile</span><span class="tag">Android / iOS</span>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" style="width:65%"></div></div>
+    <div class="progress-label">Готовність: 65% — повний реліз у Q4 2025</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>menu</title>
+    <style>
+        body {
+            margin: 40;
+            padding: 20px 10px;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(180deg, #0d0d1a 0%, #1a1a2e 100%);
+            min-height: 100%;
+        }
+
+        .menu-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .menu-section {
+            color: #64748b;
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 10px 15px 4px;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        .menu-link {
+            text-decoration: none;
+            color: #cbd5e1;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 11px 15px;
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border-left: 3px solid transparent;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .menu-link:hover {
+            background: rgba(123, 47, 255, 0.15);
+            color: #a78bfa;
+            padding-left: 22px;
+            border-left: 3px solid #7b2fff;
+            box-shadow: 2px 0 15px rgba(123, 47, 255, 0.2);
+        }
+
+        .menu-link .icon {
+            font-size: 18px;
+            min-width: 22px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="menu-container">
+    <div class="menu-section">Студія</div>
+    <a href="content.html" target="A" class="menu-link"> Головна</a>
+    <a href="menu/about.html" target="A" class="menu-link"> Про студію</a>
+    <a href="menu/team.html" target="A" class="menu-link"> Команда</a>
+
+    <div class="menu-section">Ігри</div>
+    <a href="games/catalog.html" target="A" class="menu-link">Каталог ігор</a>
+    <a href="games/upcoming.html" target="A" class="menu-link">Анонси</a>
+
+    <div class="menu-section">Сервіс</div>
+    <a href="news/news.html" target="A" class="menu-link">Новини</a>
+    <a href="menu/vacancies.html" target="A" class="menu-link">Вакансії</a>
+    <a href="menu/contact.html" target="A" class="menu-link">Контакти</a>
+</div>
+
+</body>
+</html>

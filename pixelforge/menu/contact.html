@@ -1,0 +1,141 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Контакти</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 30px 40px;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 100%);
+            color: #e2e8f0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 30px;
+            color: #ffffff;
+            text-align: center;
+            text-shadow: 0 0 15px #7b2fff;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #a78bfa;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .contacts-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .contact-block {
+            background: rgba(123, 47, 255, 0.08);
+            border: 1px solid rgba(123, 47, 255, 0.25);
+            border-radius: 14px;
+            padding: 25px;
+        }
+
+        .contact-block h3 {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #a78bfa;
+            margin: 0 0 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid rgba(123, 47, 255, 0.15);
+            font-size: 14px;
+        }
+
+        th {
+            color: #64748b;
+            font-weight: 500;
+            font-size: 13px;
+        }
+
+        td {
+            color: #cbd5e1;
+        }
+
+        td a {
+            color: #a78bfa;
+            text-decoration: none;
+        }
+
+        .social-grid {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 5px;
+        }
+
+        .social-btn {
+            text-decoration: none;
+            color: #a78bfa;
+            background: rgba(123, 47, 255, 0.12);
+            border: 1px solid rgba(123, 47, 255, 0.3);
+            border-radius: 10px;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .social-btn:hover {
+            background: rgba(123, 47, 255, 0.25);
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+
+<h1>Контакти</h1>
+<div class="subtitle">Зв'яжіться з нами — ми відповімо протягом 24 годин</div>
+
+<div class="contacts-grid">
+    <div class="contact-block">
+        <h3>Загальна інформація</h3>
+        <table>
+            <tr><th>Адреса</th><td>вул. Технологічна, 42, оф. 7<br>Київ, 01001</td></tr>
+            <tr><th>Телефон</th><td><a href="tel:+380441234567">+38 (044) 123-45-67</a></td></tr>
+            <tr><th>Email</th><td><a href="mailto:work@pixelforge.ua">work@pixelforge.ua</a></td></tr>
+            <tr><th>Режим роботи</th><td>Пн–Пт, 10:00–19:00</td></tr>
+        </table>
+    </div>
+
+    <div class="contact-block">
+        <h3>Спеціалізовані адреси</h3>
+        <table>
+            <tr><th>Партнерство</th><td><a href="mailto:partners@pixelforge.ua">partners@pixelforge.ua</a></td></tr>
+            <tr><th>Вакансії</th><td><a href="mailto:jobs@pixelforge.ua">jobs@pixelforge.ua</a></td></tr>
+            <tr><th>Преса</th><td><a href="mailto:press@pixelforge.ua">press@pixelforge.ua</a></td></tr>
+            <tr><th>Підтримка</th><td><a href="mailto:support@pixelforge.ua">support@pixelforge.ua</a></td></tr>
+        </table>
+    </div>
+</div>
+
+<div class="social-grid">
+    <a href="https://store.steampowered.com/" target="_blank" class="social-btn">Steam</a>
+    <a href="https://www.facebook.com/" target="_blank" class="social-btn">Facebook</a>
+    <a href="https://www.instagram.com/" target="_blank" class="social-btn">Instagram</a>
+    <a href="https://twitter.com/" target="_blank" class="social-btn">Twitter / X</a>
+    <a href="https://discord.com/" target="_blank" class="social-btn">Discord</a>
+    <a href="https://www.youtube.com/" target="_blank" class="social-btn">YouTube</a>
+</div>
+
+</body>
+</html>

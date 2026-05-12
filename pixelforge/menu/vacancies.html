@@ -1,0 +1,156 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Вакансії</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 30px 40px;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 100%);
+            color: #e2e8f0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 30px;
+            color: #ffffff;
+            text-align: center;
+            text-shadow: 0 0 15px #7b2fff;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #a78bfa;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .vacancy-card {
+            background: rgba(123, 47, 255, 0.07);
+            border: 1px solid rgba(123, 47, 255, 0.25);
+            border-radius: 12px;
+            padding: 20px 25px;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .vacancy-card:hover {
+            background: rgba(123, 47, 255, 0.15);
+            border-color: rgba(123, 47, 255, 0.5);
+        }
+
+        .vacancy-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .vacancy-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .vacancy-badge {
+            font-size: 12px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .badge-full { background: rgba(34, 197, 94, 0.2); color: #4ade80; border: 1px solid rgba(74, 222, 128, 0.4); }
+        .badge-part { background: rgba(251, 191, 36, 0.2); color: #fbbf24; border: 1px solid rgba(251, 191, 36, 0.4); }
+        .badge-remote { background: rgba(96, 165, 250, 0.2); color: #60a5fa; border: 1px solid rgba(96, 165, 250, 0.4); }
+
+        .vacancy-desc {
+            font-size: 14px;
+            color: #94a3b8;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .vacancy-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            font-size: 12px;
+            color: #a78bfa;
+            background: rgba(123, 47, 255, 0.12);
+            padding: 3px 10px;
+            border-radius: 20px;
+        }
+
+        .apply-note {
+            text-align: center;
+            margin-top: 25px;
+            padding: 18px;
+            background: rgba(123, 47, 255, 0.1);
+            border-radius: 12px;
+            border: 1px solid rgba(123, 47, 255, 0.3);
+        }
+
+        .apply-note p {
+            color: #cbd5e1;
+            font-size: 15px;
+            margin: 0 0 8px;
+        }
+
+        .apply-note a {
+            color: #a78bfa;
+            font-weight: 600;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Вакансії</h1>
+<div class="subtitle">Приєднуйся до команди PixelForge Studio</div>
+
+<div class="vacancy-card">
+    <div class="vacancy-header">
+        <div class="vacancy-title">Unity Developer (Middle/Senior)</div>
+        <span class="vacancy-badge badge-full">Повна зайнятість</span>
+    </div>
+    <div class="vacancy-desc">Шукаємо досвідченого розробника для роботи над нашим новим RPG-проектом. Потрібен досвід роботи з Unity 3D не менше 2 років, знання C# та розуміння ігрових архітектур.</div>
+    <div class="vacancy-tags">
+        <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">GameDev</span><span class="tag">Київ / Remote</span>
+    </div>
+</div>
+
+<div class="vacancy-card">
+    <div class="vacancy-header">
+        <div class="vacancy-title">2D Artist / Animator</div>
+        <span class="vacancy-badge badge-remote">Remote</span>
+    </div>
+    <div class="vacancy-desc">Потрібен художник із досвідом у пікселарті та 2D-анімації для роботи над мобільною грою. Портфоліо обов'язкове. Знання Aseprite, Photoshop або аналогів.</div>
+    <div class="vacancy-tags">
+        <span class="tag">Pixel Art</span><span class="tag">2D Animation</span><span class="tag">Aseprite</span>
+    </div>
+</div>
+
+<div class="vacancy-card">
+    <div class="vacancy-header">
+        <div class="vacancy-title">Junior Game Designer</div>
+        <span class="vacancy-badge badge-part">Часткова зайнятість</span>
+    </div>
+    <div class="vacancy-desc">Шукаємо людину, закохану в ігри, для допомоги в розробці механік, написанні GDD та плейтесті нових проектів. Досвід не обов'язковий — важлива пристрасть до геймдизайну.</div>
+    <div class="vacancy-tags">
+        <span class="tag">Game Design</span><span class="tag">GDD</span><span class="tag">Playtesting</span>
+    </div>
+</div>
+
+<div class="apply-note">
+    <p>Надсилайте резюме та портфоліо на: <a href="mailto:work@pixelforge.ua">work@pixelforge.ua</a></p>
+    <p style="color:#64748b; font-size:13px; margin:0;">Тема листа: назва вакансії</p>
+</div>
+
+</body>
+</html>

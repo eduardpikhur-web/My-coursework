@@ -1,0 +1,123 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Команда</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 30px 40px;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 100%);
+            color: #e2e8f0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 30px;
+            color: #ffffff;
+            text-align: center;
+            text-shadow: 0 0 15px #7b2fff;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #a78bfa;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .member-card {
+            background: rgba(123, 47, 255, 0.08);
+            border: 1px solid rgba(123, 47, 255, 0.25);
+            border-radius: 14px;
+            padding: 22px 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .member-card:hover {
+            background: rgba(123, 47, 255, 0.18);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(123, 47, 255, 0.25);
+        }
+
+        .member-avatar {
+            font-size: 48px;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        .member-name {
+            font-size: 16px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 4px;
+        }
+
+        .member-role {
+            font-size: 12px;
+            color: #a78bfa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .member-desc {
+            font-size: 13px;
+            color: #94a3b8;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Наша команда</h1>
+<div class="subtitle">Люди, які створюють магію кожного дня</div>
+
+<div class="team-grid">
+    <div class="member-card">
+        <div class="member-name">Олексій Власенко</div>
+        <div class="member-role">Засновник / Lead Developer</div>
+        <div class="member-desc">8 років досвіду в розробці ігор на Unity та Unreal Engine. Відповідає за архітектуру всіх проектів.</div>
+    </div>
+
+    <div class="member-card">
+        <div class="member-name">Марія Коваль</div>
+        <div class="member-role">Art Director</div>
+        <div class="member-desc">Провідний художник студії. Створює концепт-арт, ілюстрації та ігровий 2D-графіку для всіх проектів.</div>
+    </div>
+
+    <div class="member-card">
+        <div class="member-name">Дмитро Литвин</div>
+        <div class="member-role">Game Designer</div>
+        <div class="member-desc">Відповідає за ігрові механіки, баланс та загальний ігровий досвід. Автор концепцій усіх наших хітів.</div>
+    </div>
+
+    <div class="member-card">
+        <div class="member-name">Анна Бойко</div>
+        <div class="member-role">Sound Designer</div>
+        <div class="member-desc">Композитор та звуковий дизайнер. Створює оригінальні саундтреки та атмосферні звукові ефекти.</div>
+    </div>
+
+    <div class="member-card">
+        <div class="member-name">Іван Мороз</div>
+        <div class="member-role">Backend Developer</div>
+        <div class="member-desc">Розробляє серверну частину мультиплеєрних ігор, системи збереження прогресу та онлайн-функції.</div>
+    </div>
+
+    <div class="member-card">
+        <div class="member-name">Вікторія Шевченко</div>
+        <div class="member-role">QA Lead</div>
+        <div class="member-desc">Керує відділом тестування. Гарантує, що кожна гра виходить без критичних помилок та з бездоганною якістю.</div>
+    </div>
+</div>
+
+</body>
+</html>

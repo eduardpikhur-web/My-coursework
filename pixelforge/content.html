@@ -1,0 +1,144 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>content</title>
+<style>
+    body {
+        margin: 0;
+        padding: 30px 40px;
+        background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 100%);
+        color: #e2e8f0;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        min-height: 100%;
+    }
+
+    h1 {
+        font-size: 32px;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 10px;
+        text-shadow: 0 0 20px #7b2fff;
+        letter-spacing: 2px;
+    }
+
+    .subtitle {
+        text-align: center;
+        color: #a78bfa;
+        font-size: 15px;
+        margin-bottom: 35px;
+        letter-spacing: 1px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.8;
+        color: #cbd5e1;
+        margin-bottom: 20px;
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        margin: 25px 0;
+    }
+
+    .service-card {
+        background: rgba(123, 47, 255, 0.08);
+        border: 1px solid rgba(123, 47, 255, 0.3);
+        border-radius: 12px;
+        padding: 20px 15px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .service-card:hover {
+        background: rgba(123, 47, 255, 0.18);
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(123, 47, 255, 0.2);
+    }
+
+    .service-card .icon {
+        font-size: 32px;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .service-card h3 {
+        color: #a78bfa;
+        font-size: 14px;
+        margin: 0 0 6px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .service-card p {
+        color: #94a3b8;
+        font-size: 13px;
+        margin: 0;
+        line-height: 1.5;
+    }
+
+    .cta-button {
+        display: block;
+        width: fit-content;
+        margin: 25px auto 0;
+        padding: 14px 35px;
+        background: linear-gradient(135deg, #7b2fff, #a855f7);
+        color: white;
+        text-decoration: none;
+        border-radius: 30px;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        box-shadow: 0 5px 20px rgba(123, 47, 255, 0.4);
+        transition: all 0.3s ease;
+    }
+
+    .cta-button:hover {
+        box-shadow: 0 8px 30px rgba(123, 47, 255, 0.7);
+        transform: translateY(-2px);
+    }
+</style>
+</head>
+<body>
+
+<h1>Ласкаво просимо до PixelForge Studio!</h1>
+<div class="subtitle">Ми — команда розробників, які перетворюють ідеї на захопливі ігри</div>
+
+<p>PixelForge Studio — це незалежна студія розробки відеоігор, заснована у 2021 році. Ми спеціалізуємося на створенні інді-ігор для PC та мобільних платформ, поєднуючи сучасні технології з творчим підходом до геймдизайну.</p>
+
+<p>Наша команда складається з досвідчених розробників, художників та геймдизайнерів, які щодня працюють над тим, щоб гравці по всьому світу отримували незабутні ігрові враження.</p>
+
+<div class="services-grid">
+    <div class="service-card">
+        <h3>Розробка ігор</h3>
+        <p>PC, Mobile та браузерні ігри будь-якого жанру</p>
+    </div>
+    <div class="service-card">
+        <h3>Арт та дизайн</h3>
+        <p>2D/3D графіка, анімація та UI/UX для ігор</p>
+    </div>
+    <div class="service-card">
+        <h3>Звук та музика</h3>
+        <p>Оригінальні саундтреки та звукові ефекти</p>
+    </div>
+    <div class="service-card">
+        <h3>Геймдизайн</h3>
+        <p>Механіки, баланс та ігровий досвід</p>
+    </div>
+    <div class="service-card">
+        <h3>QA-тестування</h3>
+        <p>Повне тестування та оптимізація продукту</p>
+    </div>
+    <div class="service-card">
+        <h3>Публікація</h3>
+        <p>Steam, Google Play, App Store та інші платформи</p>
+    </div>
+</div>
+
+<a href="games/catalog.html" target="A" class="cta-button"> Переглянути наші ігри</a>
+
+</body>
+</html>

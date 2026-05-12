@@ -1,0 +1,186 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог ігор</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 30px 40px;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 100%);
+            color: #e2e8f0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 30px;
+            color: #ffffff;
+            text-align: center;
+            text-shadow: 0 0 15px #7b2fff;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #a78bfa;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .game-card {
+            background: rgba(123, 47, 255, 0.07);
+            border: 1px solid rgba(123, 47, 255, 0.22);
+            border-radius: 14px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .game-card:hover {
+            background: rgba(123, 47, 255, 0.15);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(123, 47, 255, 0.2);
+        }
+
+        .game-icon {
+            font-size: 44px;
+            min-width: 55px;
+            text-align: center;
+        }
+
+        .game-info { flex: 1; }
+
+        .game-title {
+            font-size: 17px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 4px;
+        }
+
+        .game-meta {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            font-size: 11px;
+            padding: 2px 9px;
+            border-radius: 20px;
+        }
+
+        .badge-genre { background: rgba(123,47,255,0.2); color: #a78bfa; }
+        .badge-platform { background: rgba(14,165,233,0.2); color: #38bdf8; }
+        .badge-year { background: rgba(52,211,153,0.2); color: #34d399; }
+
+        .game-desc {
+            font-size: 13px;
+            color: #94a3b8;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+
+        .game-rating {
+            font-size: 13px;
+            color: #fbbf24;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Каталог ігор</h1>
+<div class="subtitle">Усі ігри від PixelForge Studio</div>
+
+<div class="games-grid">
+
+    <div class="game-card">
+        <div class="game-info">
+            <div class="game-title">Void Wanderer</div>
+            <div class="game-meta">
+                <span class="badge badge-genre">RPG</span>
+                <span class="badge badge-platform">PC / Steam</span>
+                <span class="badge badge-year">2025</span>
+            </div>
+            <div class="game-desc">Масштабна космічна RPG з відкритим світом. Досліджуйте галактику, будуйте базу та захищайте колонію від загрозливих прибульців.</div>
+            <div class="game-rating">⭐ 4.9 / 5.0 — 12 400 відгуків</div>
+        </div>
+    </div>
+
+    <div class="game-card">
+        <div class="game-info">
+            <div class="game-title">Dungeon Cipher</div>
+            <div class="game-meta">
+                <span class="badge badge-genre">Пазл / Roguelite</span>
+                <span class="badge badge-platform">PC / Mobile</span>
+                <span class="badge badge-year">2024</span>
+            </div>
+            <div class="game-desc">Унікальне поєднання головоломок та roguelite-механік. Розгадуйте загадки підземель, щоб вижити та знайти скарб.</div>
+            <div class="game-rating">⭐ 4.7 / 5.0 — 8 200 відгуків</div>
+        </div>
+    </div>
+
+    <div class="game-card">
+        <div class="game-info">
+            <div class="game-title">Forest Spirit</div>
+            <div class="game-meta">
+                <span class="badge badge-genre">Платформер</span>
+                <span class="badge badge-platform">PC / Switch</span>
+                <span class="badge badge-year">2023</span>
+            </div>
+            <div class="game-desc">Казковий 2D платформер про лісового духа, який захищає природу від промислових загарбників. Ніжна графіка та атмосферна музика.</div>
+            <div class="game-rating">⭐ 4.8 / 5.0 — 15 600 відгуків</div>
+        </div>
+    </div>
+
+    <div class="game-card">
+        <div class="game-info">
+            <div class="game-title">Neon Tactics</div>
+            <div class="game-meta">
+                <span class="badge badge-genre">Стратегія</span>
+                <span class="badge badge-platform">PC</span>
+                <span class="badge badge-year">2022</span>
+            </div>
+            <div class="game-desc">Покрокова тактична стратегія у кіберпанк-сеттингу. Керуйте загоном хакерів та звільняйте місто від корпоративного контролю.</div>
+            <div class="game-rating">⭐ 4.6 / 5.0 — 6 800 відгуків</div>
+        </div>
+    </div>
+
+    <div class="game-card">
+        <div class="game-info">
+            <div class="game-title">Mind Grid</div>
+            <div class="game-meta">
+                <span class="badge badge-genre">Головоломка</span>
+                <span class="badge badge-platform">Mobile</span>
+                <span class="badge badge-year">2022</span>
+            </div>
+            <div class="game-desc">Мінімалістична мобільна головоломка з 200+ рівнями зростаючої складності. Тренуйте логіку та просторове мислення.</div>
+            <div class="game-rating">⭐ 4.5 / 5.0 — 32 000 відгуків</div>
+        </div>
+    </div>
+
+    <div class="game-card">
+        <div class="game-info">
+            <div class="game-title">Dragon Legacy</div>
+            <div class="game-meta">
+                <span class="badge badge-genre">Action RPG</span>
+                <span class="badge badge-platform">PC / Mobile</span>
+                <span class="badge badge-year">2021</span>
+            </div>
+            <div class="game-desc">Перша велика гра студії. Екшн-RPG у фентезійному світі з живим драконом-компаньоном та системою морального вибору.</div>
+            <div class="game-rating">⭐ 4.7 / 5.0 — 21 500 відгуків</div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
